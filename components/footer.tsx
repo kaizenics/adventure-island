@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import footerImg from '@/public/icon-white.png' 
 import { Facebook, Instagram, Twitter } from 'lucide-react'
 import { Container } from '@/components/ui/container'
 
@@ -10,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Adventure Island</h3>
+            <Image src={footerImg} alt="footer img" width={200}/>
             <p className="text-white/80">
               Creating unforgettable memories through exceptional experiences and world-class hospitality.
             </p>

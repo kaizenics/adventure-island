@@ -4,6 +4,9 @@ import { Carousel } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card"
 import { Palmtree, Utensils, Waves, Hotel } from 'lucide-react'
 import waterSlides from "@/public/water-slides.png"
+import { SaleCoupon } from './sale-coupon';
+import { FeatureStepsSection } from './featured';
+
 export function About() {
     const slideData = [
         {
@@ -62,40 +65,23 @@ export function About() {
     ]
 
     return (
-        <section className="py-20 bg-white font-manrope">
-            <Container variant={"fullMobileBreakpointPadded"}>
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold mb-4">Discover Our Paradise</h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Adventure Island offers an unparalleled blend of luxury, adventure, and natural beauty, creating unforgettable experiences for our guests.
-                    </p>
-                </div>
+        <>
+            <section className="py-20 bg-white font-manrope">
+                <Container variant={"fullMobileBreakpointPadded"}>
+                   <FeatureStepsSection />
+                    <div className="text-center mt-24">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold mb-4">Explore the Park</h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Adventure Island offers an unparalleled blend of luxury, adventure, and natural beauty, creating unforgettable experiences for our guests.
+                        </p>
+                    </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {features.map((feature, index) => (
-                        <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
-                            <CardContent className="p-6 text-center">
-                                <div className="flex justify-center text-blue-600">
-                                    {feature.icon}
-                                </div>
-                                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                                <p className="text-gray-600">{feature.description}</p>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-
-                <div className="text-center mt-24">
-                    <h2 className="text-4xl font-bold mb-4">Explore the Park</h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Adventure Island offers an unparalleled blend of luxury, adventure, and natural beauty, creating unforgettable experiences for our guests.
-                    </p>
-                </div>
-
-                <div className="relative overflow-hidden w-full h-full py-20">
-                    <Carousel slides={slideData} />
-                </div>
-            </Container>
-        </section>
+                    <div className="relative overflow-hidden w-full h-full py-20">
+                        <Carousel slides={slideData} />
+                    </div>
+                </Container>
+            </section>
+            <SaleCoupon />
+        </>
     )
 }
