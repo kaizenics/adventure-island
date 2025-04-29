@@ -1,5 +1,7 @@
 import { FeatureSteps } from "@/components/ui/feature-section"
 import waterSlides from "@/public/water-slides.png"
+import imgFeatured1 from "@/public/img1.jpg"
+import imgFeatured2 from "@/public/img2.jpg"
 
 const features = [
   { 
@@ -12,13 +14,13 @@ const features = [
     step: 'Experience 2',
     title: 'Luxury Accommodations',
     content: 'Unwind in our premium suites featuring stunning ocean views and modern amenities for the ultimate comfort.',
-    image: waterSlides.src,
+    image: imgFeatured1.src,
   },
   { 
     step: 'Experience 3',
     title: 'Dining Excellence',
     content: 'Savor exceptional cuisine at our restaurants, offering fresh local ingredients and international flavors.',
-    image: waterSlides.src,
+    image: imgFeatured2.src,
   },
 ]
 

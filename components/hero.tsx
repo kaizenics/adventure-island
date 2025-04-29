@@ -21,10 +21,10 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="max-w-7xl px-4">
-          <h1 className="mb-2 text-5xl font-bold text-white uppercase">
+          <h1 className="mb-2 text-4xl md:text-5xl font-bold text-white">
             Experience Paradise Like Never Before
           </h1>
-          <p className="text-xl text-white/90">
+          <p className="text-base md:text-xl text-white/90">
             Discover the perfect blend of excitement and relaxation in our tropical paradise
           </p>
         </div>

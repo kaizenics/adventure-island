@@ -3,9 +3,16 @@ import { Container } from "@/components/ui/container"
 import { Carousel } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card"
 import { Palmtree, Utensils, Waves, Hotel } from 'lucide-react'
-import waterSlides from "@/public/water-slides.png"
 import { SaleCoupon } from './sale-coupon';
 import { FeatureStepsSection } from './featured';
+
+// photos
+import waterSlides from "@/public/water-slides.png"
+import imgFeatured1 from "@/public/img1.jpg"
+import imgFeatured2 from "@/public/img2.jpg"
+import imgFeatured3 from "@/public/img3.jpg"
+import imgFeatured4 from "@/public/img4.jpg"
+import imgFeatured5 from "@/public/img6.webp"
 
 export function About() {
     const slideData = [
@@ -17,27 +24,27 @@ export function About() {
         {
             title: "Pools",
             button: "See More",
-            src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: imgFeatured1.src,
         },
         {
             title: "Neon Nights",
             button: "See More",
-            src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: imgFeatured2.src,
         },
         {
             title: "Cabanas & Loungers",
             button: "See More",
-            src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: imgFeatured3.src,
         },
         {
             title: "Dining",
             button: "See More",
-            src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: imgFeatured4.src,
         },
         {
             title: "Fun for Kids",
             button: "See More",
-            src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: imgFeatured5.src,
         },
     ];
 
