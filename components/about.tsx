@@ -1,8 +1,6 @@
 import React from 'react'
 import { Container } from "@/components/ui/container"
 import { Carousel } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card"
-import { Palmtree, Utensils, Waves, Hotel } from 'lucide-react'
 import { SaleCoupon } from './sale-coupon';
 import { FeatureStepsSection } from './featured';
 
@@ -47,29 +45,6 @@ export function About() {
             src: imgFeatured5.src,
         },
     ];
-
-    const features = [
-        {
-            icon: <Hotel className="h-8 w-8 mb-4" />,
-            title: "Luxury Accommodations",
-            description: "Experience ultimate comfort in our carefully designed suites with breathtaking ocean views."
-        },
-        {
-            icon: <Waves className="h-8 w-8 mb-4" />,
-            title: "Water Activities",
-            description: "Dive into adventure with our range of water sports and activities for all skill levels."
-        },
-        {
-            icon: <Utensils className="h-8 w-8 mb-4" />,
-            title: "Fine Dining",
-            description: "Savor exquisite cuisine prepared by world-class chefs using fresh local ingredients."
-        },
-        {
-            icon: <Palmtree className="h-8 w-8 mb-4" />,
-            title: "Private Beach",
-            description: "Relax on our exclusive beach, where pristine sands meet crystal-clear waters."
-        }
-    ]
 
     return (
         <>
